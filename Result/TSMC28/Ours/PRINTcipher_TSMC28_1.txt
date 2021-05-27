@@ -1,0 +1,22 @@
+Start points:
+15 51 85 
+Target points:
+30 57 106 
+Area configure file: TSMC28.conf, depth configure file: default configure
+Maximum number: 6, maximum depth: 6
+
+success
+Total cost: 9.98
+Max depth: 3
+t1 = NOR3(x2, x1, x0)	1
+t2 = AOI21(x2, x1, t1)	2
+t3 = MUX(x0, x1, t2)	3  [y1]
+t4 = OAI21(x2, x1, x0)	1
+t5 = MUX(t4, x2, t2)	3  [y2]
+t6 = NORN(t4, t1)	2  [y0]
+
+AOI21: 1
+MUX: 2
+NOR3: 1
+NORN: 1
+OAI21: 1

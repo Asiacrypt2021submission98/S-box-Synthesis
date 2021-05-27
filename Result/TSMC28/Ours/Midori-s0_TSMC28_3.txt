@@ -1,0 +1,27 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+61120 43795 24325 14192 
+Area configure file: TSMC28.conf, depth configure file: default configure
+Maximum number: 10, maximum depth: 10
+
+success
+Total cost: 13.98
+Max depth: 6
+t1 = NAND(x3, x2)	1
+t2 = OAI21(x3, x2, t1)	2
+t3 = MUX(t2, x0, x2)	3  [y1]
+t4 = NOR(x3, x0)	1
+t5 = MUX(x1, t4, t1)	2  [y3]
+t6 = NANDN(t2, x0)	3
+t7 = NAND3(x1, t1, t6)	4
+t8 = NAND(t6, t7)	5  [y0]
+t9 = NAND(x1, t7)	5
+t10 = NANDN(t4, t9)	6  [y2]
+
+MUX: 2
+NAND: 3
+NAND3: 1
+NANDN: 2
+NOR: 1
+OAI21: 1

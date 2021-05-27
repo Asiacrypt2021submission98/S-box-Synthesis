@@ -1,0 +1,24 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+13724 58902 38565 19380 
+Area configure file: TSMC28.conf, depth configure file: default configure
+Maximum number: 8, maximum depth: 8
+
+success
+Total cost: 19.31
+Max depth: 6
+t1 = MUXI(x1, x0, x3)	1
+t2 = NANDN(x3, x1)	1
+t3 = MUX(t2, x0, t1)	2
+t4 = XNOR(x2, t3)	3  [y1]
+t5 = XOR3(x1, t1, t4)	4  [y0]
+t6 = NANDN(t5, t3)	5
+t7 = MUXI(t6, t1, x3)	6  [y3]
+t8 = MUX(t5, t3, t1)	5  [y2]
+
+MUX: 2
+MUXI: 2
+NANDN: 2
+XNOR: 1
+XOR3: 1
