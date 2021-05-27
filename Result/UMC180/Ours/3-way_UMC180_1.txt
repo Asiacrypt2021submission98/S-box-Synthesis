@@ -1,0 +1,20 @@
+Start points:
+15 51 85 
+Target points:
+180 198 154 
+Area configure file: UMC180.conf, depth configure file: default configure
+Maximum number: 6, maximum depth: 6
+
+success
+Total cost: 9.67
+Max depth: 6
+t1 = NORN(x1, x2)	1
+t2 = XNOR(x0, t1)	2  [y0]
+t3 = NOR(x1, t2)	3
+t4 = XNOR(x2, t3)	4  [y2]
+t5 = NOR(x0, t4)	5
+t6 = XNOR(x1, t5)	6  [y1]
+
+NOR: 2
+NORN: 1
+XNOR: 3

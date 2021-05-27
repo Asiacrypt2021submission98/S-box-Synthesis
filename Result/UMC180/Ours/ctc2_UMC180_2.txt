@@ -1,0 +1,22 @@
+Start points:
+15 51 85 
+Target points:
+212 201 135 
+Area configure file: UMC180.conf, depth configure file: default configure
+Maximum number: 7, maximum depth: 7
+
+success
+Total cost: 9.32
+Max depth: 3
+t1 = OR(x1, x0)	1
+t2 = XNOR(x2, t1)	2  [y0]
+t3 = NAND3(x2, x1, x0)	1
+t4 = OR(x2, x1)	1
+t5 = NAND3(t1, t3, t4)	2  [y1]
+t6 = NAND(x0, t3)	2
+t7 = NAND(t4, t6)	3  [y2]
+
+NAND: 2
+NAND3: 2
+OR: 2
+XNOR: 1

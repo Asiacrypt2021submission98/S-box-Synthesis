@@ -1,0 +1,17 @@
+Total cost: 9.66
+
+t1 = OR(X1, X0) 	 1
+t2 = XNOR(X2, t1) 	 2
+t3 = AND(X0, t2) 	 3
+t4 = XNOR(X1, t3) 	 4
+t5 = NAND(t4, t2) 	 5
+t6 = XNOR(X0, t5) 	 6
+
+t6 t4 t2
+
+Max depth: 6
+
+AND: 1
+NAND: 1
+OR: 1
+XNOR: 3

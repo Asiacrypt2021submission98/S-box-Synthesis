@@ -1,0 +1,22 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+18221 38604 42325 10477 
+Area configure file: UMC180.conf, depth configure file: default configure
+Maximum number: 8, maximum depth: 8
+
+success
+Total cost: 12.99
+Max depth: 8
+t1 = OR(x3, x2)	1
+t2 = XNOR(x0, t1)	2  [y1]
+t3 = NOR(x3, t2)	3
+t4 = XNOR(x1, t3)	4  [y2]
+t5 = OR(t2, t4)	5
+t6 = XNOR(x2, t5)	6  [y3]
+t7 = OR(t4, t6)	7
+t8 = XNOR(x3, t7)	8  [y0]
+
+NOR: 1
+OR: 3
+XNOR: 4
