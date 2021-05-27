@@ -1,0 +1,16 @@
+Total cost: 12
+
+t1 = NOR(X1, X2) 	 1
+t2 = XOR(X0, t1) 	 2
+t3 = XNOR(X1, X2) 	 1
+t4 = NOR(t3, t2) 	 3
+t5 = XNOR(X2, t4) 	 4
+t6 = XOR(t3, t5) 	 5
+
+t2 t5 t6
+
+Max depth: 5
+
+NOR: 2
+XOR: 2
+XNOR: 2

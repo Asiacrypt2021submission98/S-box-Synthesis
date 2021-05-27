@@ -1,0 +1,23 @@
+Total cost: 18
+
+t1 = XNOR(X0, X1) 	 1
+t2 = NAND(X2, t1) 	 2
+t3 = XOR(X1, t2) 	 3
+t4 = ANDN(X3, X2) 	 1
+t5 = XOR(t1, t4) 	 2
+t6 = ORN(t3, X3) 	 4
+t7 = XOR(X2, t6) 	 5
+t8 = XOR(t3, X3) 	 4
+t9 = NOR(t5, t8) 	 5
+t10 = XNOR(X3, t9) 	 6
+
+t7 t8 t10 t5
+
+Max depth: 6
+
+NAND: 1
+NANDN: 1
+NOR: 1
+NORN: 1
+XOR: 4
+XNOR: 2

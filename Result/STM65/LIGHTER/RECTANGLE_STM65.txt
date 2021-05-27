@@ -1,0 +1,22 @@
+Total cost: 20
+
+t1 = ANDN(X3, X1) 	 1
+t2 = XOR(X0, t1) 	 2
+t3 = XNOR(X2, t2) 	 3
+t4 = XNOR(X3, t3) 	 4
+t5 = NOR(t2, t4) 	 5
+t6 = XNOR(X1, t5) 	 6
+t7 = ANDN(t6, t2) 	 7
+t8 = XOR(t4, t7) 	 8
+t9 = XNOR(t6, t3) 	 7
+t10 = NOR(t9, t8) 	 9
+t11 = XOR(t2, t10) 	 10
+
+t9 t11 t3 t8
+
+Max depth: 10
+
+NOR: 2
+NORN: 2
+XOR: 3
+XNOR: 4
