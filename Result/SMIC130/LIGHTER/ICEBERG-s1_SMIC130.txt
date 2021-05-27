@@ -1,0 +1,25 @@
+Total cost: 22.64
+
+t1 = ORN(X1, X3) 	 1.13
+t2 = XOR(X2, t1) 	 2.13
+t3 = NOR(X3, X0) 	 0.44
+t4 = NOR(t3, t2) 	 2.57
+t5 = XOR(X1, t4) 	 3.57
+t6 = NOR(t5, X0) 	 4.01
+t7 = XNOR(X3, t6) 	 4.949999999999999
+t8 = NOR(t5, X0) 	 4.01
+t9 = XOR(t2, t8) 	 5.01
+t10 = NOR(t7, t5) 	 5.39
+t11 = NOR(t10, t9) 	 5.83
+t12 = XOR(X0, t11) 	 6.83
+t13 = ORN(t12, t7) 	 7.96
+t14 = XOR(t9, t13) 	 8.96
+
+t7 t14 t12 t5
+
+Max depth: 8.96
+
+NANDN: 2
+NOR: 6
+XOR: 5
+XNOR: 1

@@ -1,0 +1,16 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+61695 53199 48059 65365 
+Area configure file: SMIC130.conf, depth configure file: default configure
+Maximum number: 10, maximum depth: 10
+
+success
+Total cost: 5.32
+Max depth: 1
+t1 = NANDN(x3, x2)	1  [y3]
+t2 = NANDN(x2, x1)	1  [y2]
+t3 = NANDN(x0, x3)	1  [y0]
+t4 = NANDN(x1, x0)	1  [y1]
+
+NANDN: 4

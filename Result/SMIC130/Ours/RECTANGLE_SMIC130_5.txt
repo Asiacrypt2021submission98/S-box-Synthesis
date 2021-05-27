@@ -1,0 +1,23 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+13724 58902 38565 19380 
+Under SMIC130.conf file
+Maximum number: 8, maximum depth: 8
+
+success
+Total cost: 18.98
+Max depth: 5
+t1 = XNOR(x2, x1)	1
+t2 = MUXI(x0, t1, x2)	2
+t3 = XNOR(x3, t2)	3  [y0]
+t4 = MUXI(x1, x0, x3)	1
+t5 = MUXI(t3, t4, t1)	4  [y3]
+t6 = XOR(t3, t4)	4
+t7 = MUX(t1, t4, t6)	5  [y2]
+t8 = XOR(x1, t6)	5  [y1]
+
+MUX: 1
+MUXI: 3
+XNOR: 2
+XOR: 2

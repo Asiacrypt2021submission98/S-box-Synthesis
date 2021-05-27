@@ -1,0 +1,25 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+56593 23644 24330 52239 
+Area configure file: SMIC130.conf, depth configure file: default configure
+Maximum number: 10, maximum depth: 10
+
+success
+Total cost: 10.66
+Max depth: 2
+t1 = NOR(x2, x0)	1
+t2 = MUXI(x2, x1, t1)	2  [y2]
+t3 = NOR(x3, x1)	1
+t4 = AO21(x3, x2, t3)	2  [y0]
+t5 = NAND(x1, x0)	1
+t6 = NANDN(t3, t5)	2  [y3]
+t7 = AND(x3, x0)	1
+t8 = NOR(t1, t7)	2  [y1]
+
+AND: 1
+AO21: 1
+MUXI: 1
+NAND: 1
+NANDN: 1
+NOR: 3

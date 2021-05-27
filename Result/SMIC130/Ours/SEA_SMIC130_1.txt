@@ -1,0 +1,20 @@
+Start points:
+15 51 85 
+Target points:
+120 53 86 
+Under SMIC130.conf file
+Maximum number: 6, maximum depth: 2
+
+success
+Total cost: 9.33
+Max depth: 2
+t1 = MUX(x2, x0, x1)	1  [y1]
+t2 = NOR(x1, x0)	1
+t3 = XNOR(x2, t2)	2  [y2]
+t4 = NAND(x2, x1)	1
+t5 = XNOR(x0, t4)	2  [y0]
+
+MUX: 1
+NAND: 1
+NOR: 1
+XNOR: 2

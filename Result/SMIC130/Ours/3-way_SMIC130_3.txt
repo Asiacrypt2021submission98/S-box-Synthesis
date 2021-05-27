@@ -1,0 +1,22 @@
+Start points:
+15 51 85 
+Target points:
+180 198 154 
+Under SMIC130.conf file
+Maximum number: 6, maximum depth: 4
+
+success
+Total cost: 10.32
+Max depth: 4
+t1 = NORN(x1, x2)	1
+t2 = XNOR(x0, t1)	2  [y0]
+t3 = NOR(x1, t2)	3
+t4 = XNOR(x2, t3)	4  [y2]
+t5 = NAND(x2, t2)	3
+t6 = XOR(x1, t5)	4  [y1]
+
+NAND: 1
+NOR: 1
+NORN: 1
+XNOR: 2
+XOR: 1

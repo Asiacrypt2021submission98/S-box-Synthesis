@@ -1,0 +1,16 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+10023 21811 3135 1525 
+Area configure file: SMIC130.conf, depth configure file: default configure
+Maximum number: 10, maximum depth: 10
+
+success
+Total cost: 10.68
+Max depth: 1
+t1 = MUX(x1, x3, x2)	1  [y1]
+t2 = MUX(x2, x0, x3)	1  [y0]
+t3 = MUX(x3, x1, x0)	1  [y2]
+t4 = MUX(x0, x2, x1)	1  [y3]
+
+MUX: 4

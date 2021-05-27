@@ -1,0 +1,16 @@
+Total cost: 9.99
+
+t1 = NAND(X0, X1) 	 0.34
+t2 = XNOR(X2, t1) 	 1.28
+t3 = NOR(t2, X1) 	 1.72
+t4 = XNOR(X0, t3) 	 2.66
+t5 = NAND(t4, t2) 	 3.0
+t6 = XNOR(X1, t5) 	 3.94
+
+t2 t6 t4
+
+Max depth: 3.94
+
+NAND: 2
+NOR: 1
+XNOR: 3

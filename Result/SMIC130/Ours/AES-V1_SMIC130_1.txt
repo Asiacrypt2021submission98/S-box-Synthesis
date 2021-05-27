@@ -1,0 +1,24 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+14161 25383 1743 2549 
+Under SMIC130.conf file
+Maximum number: 8, maximum depth: 8
+
+success
+Total cost: 17.67
+Max depth: 4
+t1 = NAND(x2, x0)	1
+t2 = XNOR(x3, t1)	2
+t3 = MUX(t2, x0, x1)	3  [y3]
+t4 = MUXI(x1, t1, t2)	3
+t5 = MUX(x2, t4, x3)	4  [y0]
+t6 = MUX(x0, t4, x1)	4  [y2]
+t7 = NANDN(x2, x1)	1
+t8 = MUX(t4, x3, t7)	4  [y1]
+
+MUX: 4
+MUXI: 1
+NAND: 1
+NANDN: 1
+XNOR: 1
