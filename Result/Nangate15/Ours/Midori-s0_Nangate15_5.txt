@@ -1,0 +1,27 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+61120 43795 24325 14192 
+Area configure file: Nangate15.conf, depth configure file: default configure
+Maximum number: 12, maximum depth: 12
+
+success
+Total cost: 14.5
+Max depth: 7
+t1 = AOI21(x3, x2, x1)	1
+t2 = NOR(x3, x0)	1
+t3 = OR(t1, t2)	2  [y3]
+t4 = NOR(x3, t2)	2
+t5 = NOR(x0, t2)	2
+t6 = NOR3(x2, t4, t5)	3
+t7 = NOR(t5, t6)	4  [y1]
+t8 = NOR(x2, t6)	4
+t9 = NOR3(x1, t2, t8)	5
+t10 = NOR(t8, t9)	6  [y2]
+t11 = NOR(x1, t9)	6
+t12 = AOI21(x3, x2, t11)	7  [y0]
+
+AOI21: 2
+NOR: 7
+NOR3: 2
+OR: 1

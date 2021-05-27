@@ -1,0 +1,23 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+56593 41891 41205 52239 
+Area configure file: Nangate15.conf, depth configure file: default configure
+Maximum number: 10, maximum depth: 10
+
+success
+Total cost: 11
+Max depth: 2
+t1 = OR(x3, x1)	1
+t2 = NAND(x3, x2)	1
+t3 = NAND(t1, t2)	2  [y0]
+t4 = NAND(x1, x0)	1
+t5 = NAND(t1, t4)	2  [y3]
+t6 = OR(x2, x0)	1
+t7 = NAND(x2, x1)	1
+t8 = NAND(t6, t7)	2  [y2]
+t9 = NAND(x3, x0)	1
+t10 = NAND(t6, t9)	2  [y1]
+
+NAND: 8
+OR: 2
