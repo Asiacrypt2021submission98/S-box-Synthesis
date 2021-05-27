@@ -1,0 +1,26 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+21859 15449 20145 34680 
+Area configure file: STD90.conf, depth configure file: default configure
+Maximum number: 9, maximum depth: 9
+
+success
+Total cost: 18.65
+Max depth: 8
+t1 = NAND(x2, x0)	1
+t2 = XNOR(x1, t1)	2
+t3 = NAND(x3, t2)	3
+t4 = XNOR(x0, t3)	4  [y3]
+t5 = MUX(t2, x0, x3)	3
+t6 = XOR3(x2, t4, t5)	5  [y1]
+t7 = XNOR(t2, t6)	6  [y0]
+t8 = NOR(t4, t7)	7
+t9 = XOR(t5, t8)	8  [y2]
+
+MUX: 1
+NAND: 2
+NOR: 1
+XNOR: 3
+XOR: 1
+XOR3: 1

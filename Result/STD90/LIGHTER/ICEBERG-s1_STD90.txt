@@ -1,0 +1,27 @@
+Total cost: 23.32
+
+t1 = NOT(X1) 	 1
+t2 = NOR(X3, t1) 	 2
+t3 = XNOR(X2, t2) 	 3
+t4 = NOR(X0, X3) 	 1
+t5 = NOR(t4, t3) 	 4
+t6 = XNOR(t1, t5) 	 5
+t7 = NOR(t6, X0) 	 6
+t8 = XOR(t3, t7) 	 7
+t9 = NOR(t6, X0) 	 6
+t10 = XNOR(X3, t9) 	 7
+t11 = NOR(t6, t10) 	 8
+t12 = NOR(t11, t8) 	 9
+t13 = XNOR(X0, t12) 	 10
+t14 = NOR(t10, t13) 	 11
+t15 = XNOR(t8, t14) 	 12
+t16 = NOT(t13) 	 11
+
+t10 t15 t16 t6
+
+Max depth: 12
+
+NOT: 2
+NOR: 8
+XOR: 1
+XNOR: 5

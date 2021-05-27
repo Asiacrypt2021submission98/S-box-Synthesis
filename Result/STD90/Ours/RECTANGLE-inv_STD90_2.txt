@@ -1,0 +1,25 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+47253 27075 14700 42087 
+Area configure file: STD90.conf, depth configure file: default configure
+Maximum number: 9, maximum depth: 9
+
+success
+Total cost: 17.98
+Max depth: 6
+t1 = NOR(x3, x0)	1
+t2 = XOR(x2, t1)	2
+t3 = XNOR(x1, t2)	3  [y2]
+t4 = MUX(x0, x1, t3)	4
+t5 = XOR(x3, t4)	5  [y1]
+t6 = NOT(x2)	1
+t7 = MUX(x0, x3, t6)	2
+t8 = MUX(t2, t7, t4)	5  [y3]
+t9 = MUX(t5, t7, t2)	6  [y0]
+
+MUX: 4
+NOR: 1
+NOT: 1
+XNOR: 1
+XOR: 2

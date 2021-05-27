@@ -1,0 +1,20 @@
+Start points:
+15 51 85 
+Target points:
+30 57 106 
+Area configure file: STD90.conf, depth configure file: default configure
+Maximum number: 6, maximum depth: 6
+
+success
+Total cost: 9.32
+Max depth: 3
+t1 = NOR(x2, x1)	1
+t2 = AOI21(x2, x1, t1)	2
+t3 = MUX(x0, t2, x2)	3  [y2]
+t4 = MUX(x0, x1, t2)	3  [y1]
+t5 = XNOR(x0, t1)	2  [y0]
+
+AOI21: 1
+MUX: 2
+NOR: 1
+XNOR: 1
