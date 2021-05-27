@@ -1,0 +1,21 @@
+Start points:
+15 51 85 
+Target points:
+212 201 135 
+Area configure file: Nangate45.conf, depth configure file: default configure
+Maximum number: 6, maximum depth: 6
+
+success
+Total cost: 8.33
+Max depth: 4
+t1 = NOR(x1, x0)	1
+t2 = XOR(x2, t1)	2  [y0]
+t3 = NAND(x2, x0)	1
+t4 = XOR(x1, t3)	2  [y1]
+t5 = NOR(x0, t2)	3
+t6 = AOI21(x2, x1, t5)	4  [y2]
+
+AOI21: 1
+NAND: 1
+NOR: 2
+XOR: 2

@@ -1,0 +1,25 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+60194 44047 41820 27033 
+Area configure file: Nangate45.conf, depth configure file: default configure
+Maximum number: 9, maximum depth: 9
+
+success
+Total cost: 15.33
+Max depth: 7
+t1 = NOT(x1)	1
+t2 = MUX(x2, t1, x0)	2
+t3 = XNOR(x3, t2)	3  [y1]
+t4 = MUX(x2, x0, t3)	4
+t5 = XOR(t1, t4)	5  [y0]
+t6 = NOR(x3, t2)	3
+t7 = XOR(x2, t6)	4  [y2]
+t8 = MUX(t5, x3, x0)	6
+t9 = NOT(t8)	7  [y3]
+
+MUX: 3
+NOR: 1
+NOT: 2
+XNOR: 1
+XOR: 2
