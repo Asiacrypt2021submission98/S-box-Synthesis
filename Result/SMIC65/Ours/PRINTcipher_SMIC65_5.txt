@@ -1,0 +1,20 @@
+Start points:
+15 51 85 
+Target points:
+30 57 106 
+Under SMIC65.conf file
+Maximum number: 6, maximum depth: 6
+
+success
+Total cost: 9.75
+Max depth: 4
+t1 = NOR(x2, x1)	1
+t2 = XNOR(x0, t1)	2  [y0]
+t3 = NAND(x1, x0)	1
+t4 = XNOR(x2, t3)	2  [y2]
+t5 = NAND(x2, t2)	3
+t6 = XNOR(x1, t5)	4  [y1]
+
+NAND: 2
+NOR: 1
+XNOR: 3

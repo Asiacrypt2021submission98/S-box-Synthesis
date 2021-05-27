@@ -1,0 +1,24 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+60194 44047 41820 27033 
+Under SMIC65.conf file
+Maximum number: 8, maximum depth: 6
+
+success
+Total cost: 16
+Max depth: 6
+t1 = NOR(x3, x2)	1
+t2 = XNOR(x1, t1)	2
+t3 = XOR(x0, t2)	3  [y0]
+t4 = MUXI(t3, x3, x0)	4  [y3]
+t5 = MUXI(x2, t2, x0)	3
+t6 = XOR(x3, t5)	4  [y1]
+t7 = NAND(t4, t6)	5
+t8 = XNOR(x2, t7)	6  [y2]
+
+MUXI: 2
+NAND: 1
+NOR: 1
+XNOR: 2
+XOR: 2

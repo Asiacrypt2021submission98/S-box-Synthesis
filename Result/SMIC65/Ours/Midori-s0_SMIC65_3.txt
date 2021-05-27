@@ -1,0 +1,27 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+61120 43795 24325 14192 
+Area configure file: SMIC65.conf, depth configure file: default configure
+Maximum number: 10, maximum depth: 10
+
+success
+Total cost: 15
+Max depth: 6
+t1 = NAND(x3, x2)	1
+t2 = OA21(x3, x2, t1)	2
+t3 = MUX(t2, x2, x0)	3  [y1]
+t4 = NAND(x0, t2)	3
+t5 = NAND3(x1, t1, t4)	4
+t6 = NAND(t4, t5)	5  [y0]
+t7 = NOR(x3, x0)	1
+t8 = MUX(x1, t7, t1)	2  [y3]
+t9 = NAND(x1, t5)	5
+t10 = NANDN(t7, t9)	6  [y2]
+
+MUX: 2
+NAND: 4
+NAND3: 1
+NANDN: 1
+NOR: 1
+OA21: 1
