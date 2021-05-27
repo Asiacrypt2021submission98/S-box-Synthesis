@@ -1,0 +1,25 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+31536 56708 43480 45894 
+Area configure file: TSMC65.conf, depth configure file: default configure
+Maximum number: 9, maximum depth: 9
+
+success
+Total cost: 23.5
+Max depth: 8
+t1 = OAI21(x3, x2, x1)	1
+t2 = MUXI(x3, x2, t1)	2
+t3 = MUX(x0, t2, t1)	3  [y1]
+t4 = MUXI(x2, t3, x0)	4
+t5 = MUXI(t4, x1, x3)	5  [y2]
+t6 = MUXI(x2, t2, x1)	3
+t7 = MUXI(t5, t4, t6)	6  [y3]
+t8 = NOR(x0, t7)	7
+t9 = XOR3(x3, x1, t8)	8  [y0]
+
+MUX: 1
+MUXI: 5
+NOR: 1
+OAI21: 1
+XOR3: 1

@@ -1,0 +1,22 @@
+Start points:
+15 51 85 
+Target points:
+120 53 86 
+Area configure file: TSMC65.conf, depth configure file: default configure
+Maximum number: 6, maximum depth: 6
+
+success
+Total cost: 10
+Max depth: 2
+t1 = MUXI(x2, x0, x1)	1
+t2 = NOR(x1, x0)	1
+t3 = XNOR(x2, t2)	2  [y2]
+t4 = NAND(x2, x1)	1
+t5 = XNOR(x0, t4)	2  [y0]
+t6 = NOT(t1)	2  [y1]
+
+MUXI: 1
+NAND: 1
+NOR: 1
+NOT: 1
+XNOR: 2

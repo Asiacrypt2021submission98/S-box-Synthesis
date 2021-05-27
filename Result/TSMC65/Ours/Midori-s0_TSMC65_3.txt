@@ -1,0 +1,30 @@
+Start points:
+255 3855 13107 21845 
+Target points:
+61120 43795 24325 14192 
+Area configure file: TSMC65.conf, depth configure file: default configure
+Maximum number: 10, maximum depth: 10
+
+success
+Total cost: 16.5
+Max depth: 4
+t1 = OAI21(x3, x2, x0)	1
+t2 = NORN(t1, x1)	2
+t3 = AOI21(x3, x2, t2)	3  [y0]
+t4 = OR(x3, x0)	1
+t5 = NAND(t1, t4)	2
+t6 = MUX(t5, x2, x0)	3  [y1]
+t7 = NOR(x2, t5)	3
+t8 = MUXI(x1, t7, t4)	4  [y2]
+t9 = AO21(x3, x2, x1)	1
+t10 = NAND(t4, t9)	2  [y3]
+
+AO21: 1
+AOI21: 1
+MUX: 1
+MUXI: 1
+NAND: 2
+NOR: 1
+NORN: 1
+OAI21: 1
+OR: 1
